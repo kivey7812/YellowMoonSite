@@ -8,29 +8,29 @@ interface Props {
 
 const ImageCarousel: React.FC<Props> = props => {
 
-const getCarouselSlides = (imagePaths: string[]) => {
-    const slides: JSX.Element[] =[];
-    imagePaths.forEach((ip, index )=> {
-        if(index == 0){
-            slides.push (
-                <div className="carousel-item active">
-                        <img className="d-block w-100" src={ip} />
-                    </div>
-            )
-        }else{
-            slides.push (
-                <div className="carousel-item">
-                        <img className="d-block w-100" src={ip} />
-                    </div>
-            )
-        }
-    })
-    return slides;
-} 
+    const getCarouselSlides = (imagePaths: string[]) => {
+        const slides: JSX.Element[] =[];
+        imagePaths.forEach((ip, index )=> {
+            if(index == 0){
+                slides.push (
+                    <div className="carousel-item active">
+                            <img className="d-block w-100" src={ip} />
+                        </div>
+                )
+            }else{
+                slides.push (
+                    <div className="carousel-item">
+                            <img className="d-block w-100" src={ip} />
+                        </div>
+                )
+            }
+            })
+            return slides;
+    } 
 
-const slides = getCarouselSlides(props.imagePaths);
+    const slides = getCarouselSlides(props.imagePaths);
 
-return (<div id="carouselSlides" className="carousel slide" data-ride="carousel">
+    return (<div id="carouselSlides" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                     {slides}
                 </div>

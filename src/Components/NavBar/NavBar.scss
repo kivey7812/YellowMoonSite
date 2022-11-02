@@ -1,0 +1,33 @@
+.navbar {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 2px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    padding-left: 2%;
+}
+
+.nav-link,
+.nav-item {
+    margin: auto;
+    font-size: 22px;
+    width: 100% !important;
+    outline: none;
+}
+
+.nav-link:hover {
+    color: #e96228 !important;
+}
+
+#navbarDropdown {
+    margin: auto;
+    font-size: 22px;
+    width: 100% !important;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-menu:hover > a {
+    background-image: none !important;
+    background-color: white !important;
+}
